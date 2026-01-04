@@ -13,6 +13,7 @@
 		A1000007A1000007 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000008A1000008; };
 		A1000009A1000009 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000AA100000A; };
 		A100000BA100000B /* AddFriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000CA100000C; };
+		A1000020A1000020 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1000021A1000021; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		A100000AA100000A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		A100000CA100000C /* AddFriendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendView.swift; sourceTree = "<group>"; };
 		A100000DA100000D /* FriendTimeTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendTimeTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1000021A1000021 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			isa = PBXGroup;
 			children = (
 				A1000002A1000002 /* FriendTimeTrackerApp.swift */,
+				A1000021A1000021 /* Assets.xcassets */,
 				A1000012A1000012 /* Models */,
 				A1000013A1000013 /* Views */,
 				A1000014A1000014 /* Managers */,
@@ -98,6 +101,7 @@
 			buildPhases = (
 				A1000017A1000017 /* Sources */,
 				A100000EA100000E /* Frameworks */,
+				A1000022A1000022 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -109,6 +113,17 @@
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1000022A1000022 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000020A1000020 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXProject section */
 		A1000018A1000018 /* Project object */ = {
@@ -288,6 +303,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_CFBundleDisplayName = "Friend Time Tracker";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -315,6 +331,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_CFBundleDisplayName = "Friend Time Tracker";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";

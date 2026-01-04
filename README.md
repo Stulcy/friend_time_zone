@@ -1,4 +1,4 @@
-# FriendTimeTracker
+# Friend Time Tracker
 
 A lightweight macOS menu bar app that shows the current time for your friends in different timezones.
 
@@ -39,7 +39,14 @@ To install permanently:
 
 Download the latest `.zip` from [Releases](https://github.com/Stulcy/friend_time_zone/releases), unzip, and move to `/Applications`.
 
-**Note:** Since the app isn't notarized, you'll need to right-click → Open on first launch, then click "Open" in the dialog.
+**Important:** Since the app isn't notarized, macOS will block it on first launch. To open:
+
+1. Try to open the app (it will be blocked)
+2. Go to **System Settings → Privacy & Security**
+3. Scroll down and find "Friend Time Tracker was blocked"
+4. Click **Open Anyway**
+
+Alternatively, right-click the app → **Open** → click **Open** in the dialog.
 
 ## Usage
 
