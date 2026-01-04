@@ -19,10 +19,19 @@ struct MenuBarView: View {
             Divider()
                 .padding(.vertical, 4)
 
-            Button("Settings") {
-                openSettings()
+            HStack {
+                Button("Settings") {
+                    openSettings()
+                }
+                .keyboardShortcut(",", modifiers: .command)
+
+                Spacer()
+
+                Button("Quit") {
+                    NSApplication.shared.terminate(nil)
+                }
+                .keyboardShortcut("q", modifiers: .command)
             }
-            .keyboardShortcut(",", modifiers: .command)
             .padding(.horizontal, 12)
             .padding(.vertical, 6)
         }
@@ -37,6 +46,13 @@ struct FriendTimeRow: View {
 
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 
+    private var timeString: String {
+        let formatter = DateFormatter()
+        formatter.timeStyle = .short
+        formatter.timeZone = friend.timezone
+        return formatter.string(from: currentTime)
+    }
+
     var body: some View {
         HStack {
             VStack(alignment: .leading, spacing: 2) {
@@ -49,7 +65,7 @@ struct FriendTimeRow: View {
 
             Spacer()
 
-            Text(friend.currentTime)
+            Text(timeString)
                 .font(.system(.title2, design: .monospaced))
                 .fontWeight(.medium)
         }
