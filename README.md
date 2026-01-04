@@ -21,8 +21,8 @@ A lightweight macOS menu bar app that shows the current time for your friends in
 **Requirements:** Xcode 15+ and macOS 14+
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/FriendTimeTracker.git
-cd FriendTimeTracker
+git clone https://github.com/Stulcy/friend_time_zone.git
+cd friend_time_zone
 open FriendTimeTracker.xcodeproj
 ```
 
@@ -37,7 +37,7 @@ To install permanently:
 
 ### Option 2: Download Release
 
-Download the latest `.zip` from [Releases](https://github.com/YOUR_USERNAME/FriendTimeTracker/releases), unzip, and move to `/Applications`.
+Download the latest `.zip` from [Releases](https://github.com/Stulcy/friend_time_zone/releases), unzip, and move to `/Applications`.
 
 **Note:** Since the app isn't notarized, you'll need to right-click → Open on first launch, then click "Open" in the dialog.
 
